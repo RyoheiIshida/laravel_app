@@ -21,3 +21,5 @@ Route::get('/hello/view', 'App\Http\Controllers\HelloController@view');
 Route::get('/hello/list', 'App\Http\Controllers\HelloController@list');
 Route::get('/view/master', 'App\Http\Controllers\ViewController@master');
 Route::get('/record/hasmany', 'App\Http\Controllers\RecordController@hasmany');
+Route::get('/save/create', 'App\Http\Controllers\SaveController@create');
+Route::post('/save/store', 'App\Http\Controllers\SaveController@store');
