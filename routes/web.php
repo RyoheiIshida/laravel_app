@@ -23,3 +23,7 @@ Route::get('/view/master', 'App\Http\Controllers\ViewController@master');
 Route::get('/record/hasmany', 'App\Http\Controllers\RecordController@hasmany');
 Route::get('/save/create', 'App\Http\Controllers\SaveController@create');
 Route::post('/save/store', 'App\Http\Controllers\SaveController@store');
+Route::get('/save/{id}/edit','App\Http\Controllers\SaveController@edit');
+Route::patch('/save/{id}','App\Http\Controllers\SaveController@update');
+Route::get('/save/{id}/show','App\Http\Controllers\SaveController@show');
+Route::delete('/save/{id}','App\Http\Controllers\SaveController@destroy');
